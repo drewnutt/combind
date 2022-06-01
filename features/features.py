@@ -314,7 +314,7 @@ class Features:
         if processes != 1:
             from features.shape import shape_mp
             sims = shape_mp(poses2, poses1, version=self.shape_version,processes=processes).T
-        else
+        else:
             from features.shape import shape
             # More efficient to have longer pose list provided as second argument.
             # This only matters for screening.
